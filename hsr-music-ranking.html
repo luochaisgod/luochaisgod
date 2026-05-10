@@ -1,0 +1,754 @@
+<!DOCTYPE html> <html lang="en"><head>
+<title>HSR Music Ranking</title>
+<base href=".">
+<meta name="pathname" content="hsr-music-ranking.html">
+<meta name="description" content="Waterloo - HSR Music Ranking">
+<meta property="og:title" content="HSR Music Ranking">
+<meta property="og:description" content="Waterloo - HSR Music Ranking">
+<meta property="og:type" content="website">
+<meta property="og:url" content="hsr-music-ranking.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Waterloo"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="HSR_Music_Ranking_0">HSR Music Ranking</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Ranking</th>
+<th dir="auto"></th>
+<th dir="ltr">Name</th>
+<th dir="ltr">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">1. The Traveler And His Oath</td>
+<td dir="ltr">The Traveler And His Oath</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Qj8eTlQcF_aCZ-7QxmV_how5xAmnmFDJ/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Qj8eTlQcF_aCZ-7QxmV_how5xAmnmFDJ/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">2. The Crespuscule Zone</td>
+<td dir="ltr">The Crespuscule Zone</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Da4NkcQ9ZHRHCasqzb2h5HXMab0AusNX/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Da4NkcQ9ZHRHCasqzb2h5HXMab0AusNX/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">3. Rondo Across Countless Kalpas</td>
+<td dir="ltr">Rondo Across Countless Kalpas</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1R0EzHujEjGQ_v4Nj2sgOIRg1B5z658My/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1R0EzHujEjGQ_v4Nj2sgOIRg1B5z658My/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">4. Sparkle: Behind the Curtain</td>
+<td dir="ltr">Sparkle: Behind the Curtain</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1WDCEu4XNrFHFxVRPOQTBKnSTeXVgFsIo/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1WDCEu4XNrFHFxVRPOQTBKnSTeXVgFsIo/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">5</td>
+<td dir="ltr">5. Swordward</td>
+<td dir="ltr">Swordward</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1rf2t5-j-g37-_6eQczyQNknposY-xAyy/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1rf2t5-j-g37-_6eQczyQNknposY-xAyy/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">6</td>
+<td dir="ltr">6. Always Here to Help</td>
+<td dir="ltr">Always Here to Help</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1-1dUC02993_RbOEMWAEGyVJhzPoUBspi/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1-1dUC02993_RbOEMWAEGyVJhzPoUBspi/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">7</td>
+<td dir="ltr">7. The Fall at Dawn’s Rise</td>
+<td dir="ltr">The Fall at Dawn’s Rise</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1kzHfaqUppWJB0fUdOB0hl4yOndG1dSPV/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1kzHfaqUppWJB0fUdOB0hl4yOndG1dSPV/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">8</td>
+<td dir="ltr">8. Tempered Chill</td>
+<td dir="ltr">Tempered Chill</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1xXY6EEyEPMMLeDSzdwK1H0H7GbMroXmn/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1xXY6EEyEPMMLeDSzdwK1H0H7GbMroXmn/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">9</td>
+<td dir="ltr">9. Soloist</td>
+<td dir="ltr">Soloist</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1_LqdHcKEwebBfjF9wZam2IuVOwvuwpjc/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1_LqdHcKEwebBfjF9wZam2IuVOwvuwpjc/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">10</td>
+<td dir="ltr">10. A Revisiting of Past Dreams</td>
+<td dir="ltr">A Revisiting of Past Dreams</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1e8hIr6KHpkLQnzsPKGEVQpTfKT4fyhBf/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1e8hIr6KHpkLQnzsPKGEVQpTfKT4fyhBf/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">11</td>
+<td dir="ltr">11. With You Once More</td>
+<td dir="ltr">With You Once More</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/12d_kqHXr6ZsQMUCDVM_3DBAyaPCIr6fV/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/12d_kqHXr6ZsQMUCDVM_3DBAyaPCIr6fV/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">12</td>
+<td dir="ltr">12. Heaven and Earth as a Chessboard</td>
+<td dir="ltr">Heaven and Earth as a Chessboard</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1_CInn-ddorlvbzTubn0CZxVONaa0NSRW/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1_CInn-ddorlvbzTubn0CZxVONaa0NSRW/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">13</td>
+<td dir="ltr">13. Filming in Progress</td>
+<td dir="ltr">Filming in Progress</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1cr9hq7vNw5jb5S3jQOZytBe6OdIh11Gb/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1cr9hq7vNw5jb5S3jQOZytBe6OdIh11Gb/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">14</td>
+<td dir="ltr">14. A Dramatic Irony</td>
+<td dir="ltr">A Dramatic Irony</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1CAg9r3k4ydmn-0_QH2Ok1s5ZgNSYrOLo/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1CAg9r3k4ydmn-0_QH2Ok1s5ZgNSYrOLo/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">15</td>
+<td dir="ltr">15. Coronal Radiance</td>
+<td dir="ltr">Coronal Radiance</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Wlzhtlf80KdjHoSRO5o2I4_MM2A11r0x/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Wlzhtlf80KdjHoSRO5o2I4_MM2A11r0x/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">16</td>
+<td dir="ltr">16. Monodrama</td>
+<td dir="ltr">Monodrama</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1XswbZjLJKwLx8Rt_WSxNk_FDBj9_5hEE/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1XswbZjLJKwLx8Rt_WSxNk_FDBj9_5hEE/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">17</td>
+<td dir="ltr">17. Crown of the Mundane and Divine</td>
+<td dir="ltr">Crown of the Mundane and Divine</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1GULd2Wg8Vtr92zvzsl00Oecam5jdRe08/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1GULd2Wg8Vtr92zvzsl00Oecam5jdRe08/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">18</td>
+<td dir="ltr">18. Deadly Romance</td>
+<td dir="ltr">Deadly Romance</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1RbIgR9Fb5UkNkpcMX5fVx7xwPNP-1G6k/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1RbIgR9Fb5UkNkpcMX5fVx7xwPNP-1G6k/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">19</td>
+<td dir="ltr">19. In Torrid Heat</td>
+<td dir="ltr">In Torrid Heat</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/16qTeLQIQ60nXLKJfvF7mvKSuAMQs374y/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/16qTeLQIQ60nXLKJfvF7mvKSuAMQs374y/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">20</td>
+<td dir="ltr">20. Welcome to Dreamville! Part 2</td>
+<td dir="ltr">Welcome to Dreamville! Part 2</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/148Q2SOGKAQ4BWW3htK-Vggokk3j5kivt/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/148Q2SOGKAQ4BWW3htK-Vggokk3j5kivt/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">21</td>
+<td dir="ltr">21. Daughter of the Sea</td>
+<td dir="ltr">Daughter of the Sea</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1sx6Bf4EUoe0PD6oGoaup26mGt6aB-W8e/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1sx6Bf4EUoe0PD6oGoaup26mGt6aB-W8e/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">22</td>
+<td dir="ltr">22. A Flash</td>
+<td dir="ltr">A Flash</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1dr38iaPMarFaF9zcqolEjLKEnxcFvBfr/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1dr38iaPMarFaF9zcqolEjLKEnxcFvBfr/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">23</td>
+<td dir="ltr">23. Before the Show Stars</td>
+<td dir="ltr">Before the Show Stars</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/18TvHOo-P958CVrSV-BwCa5HOGNzPNrK_/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/18TvHOo-P958CVrSV-BwCa5HOGNzPNrK_/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">24</td>
+<td dir="ltr">24. Welcome to Dreamville! Part 3</td>
+<td dir="ltr">Welcome to Dreamville! Part 3</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/156JVJgKPIJgg-J3WdUuqXtvcs4FiFcMH/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/156JVJgKPIJgg-J3WdUuqXtvcs4FiFcMH/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">25</td>
+<td dir="ltr">25. The Golden Touch</td>
+<td dir="ltr">The Golden Touch</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1xskQtQ6wh_CL7wv665hroI0IhGfl9Vy8/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1xskQtQ6wh_CL7wv665hroI0IhGfl9Vy8/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">26</td>
+<td dir="ltr">26. Welcome to Dreamville! Part 1</td>
+<td dir="ltr">Welcome to Dreamville! Part 1</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1IXKkdZtWpWLaek60cpIi9A8bcDX9GZMO/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1IXKkdZtWpWLaek60cpIi9A8bcDX9GZMO/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">27</td>
+<td dir="ltr">27. In All Does Life Flow</td>
+<td dir="ltr">In All Does Life Flow</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1wSXUHdFpsihK7T-06KwrG11E7NuCMnH1/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1wSXUHdFpsihK7T-06KwrG11E7NuCMnH1/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">28</td>
+<td dir="ltr">28. Night of Thrills</td>
+<td dir="ltr">Night of Thrills</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1ZN8qsz4z533VwBLu0YLMYkfX7Z3_jgXZ/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1ZN8qsz4z533VwBLu0YLMYkfX7Z3_jgXZ/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">29</td>
+<td dir="ltr">29. Wordless</td>
+<td dir="ltr">Wordless</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1xjBNzbCOexDuniF0N19NZFWyf_T0MKb8/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1xjBNzbCOexDuniF0N19NZFWyf_T0MKb8/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">30</td>
+<td dir="ltr">30. Geniuses in the Universe</td>
+<td dir="ltr">Geniuses in the Universe</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1sWsJ4EjjpMCjPFCMH7pcJJU1QZLdzN5y/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1sWsJ4EjjpMCjPFCMH7pcJJU1QZLdzN5y/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">31</td>
+<td dir="ltr">31. Nothing to Laugh At</td>
+<td dir="ltr">Nothing to Laugh At</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1jx8JnMqSJill0_S5nAiq13HRD2LkLoUF/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1jx8JnMqSJill0_S5nAiq13HRD2LkLoUF/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">32</td>
+<td dir="ltr">32. Lullaby</td>
+<td dir="ltr">Lullaby</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1zxFiWLZnZs7Z4F7GuzSe6k0rqw7nzmv5/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1zxFiWLZnZs7Z4F7GuzSe6k0rqw7nzmv5/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">33</td>
+<td dir="ltr">33. Art of Dreaming</td>
+<td dir="ltr">Art of Dreaming</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1whshrr3rLBkKmLGujWAQ1bI0buTBjrcu/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1whshrr3rLBkKmLGujWAQ1bI0buTBjrcu/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">34</td>
+<td dir="ltr">34. A Chivalric Romances</td>
+<td dir="ltr">A Chivalric Romances</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1ExaDFHYxRBnuzQPLrWnTLept_9qRUvUL/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1ExaDFHYxRBnuzQPLrWnTLept_9qRUvUL/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">35</td>
+<td dir="ltr">35. The Jepella Rebellion</td>
+<td dir="ltr">The Jepella Rebellion</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1RdqeSDqnbDGUQYavqGn9DBrzMkrjLlQm/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1RdqeSDqnbDGUQYavqGn9DBrzMkrjLlQm/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">36</td>
+<td dir="ltr">36. Dear March 7th</td>
+<td dir="ltr">Dear March 7th</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/11PVi1NOLSuxJELAhzJ9M2JBIaAJfybzq/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/11PVi1NOLSuxJELAhzJ9M2JBIaAJfybzq/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">37</td>
+<td dir="ltr">37. Space Comedy</td>
+<td dir="ltr">Space Comedy</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Xs9j_iVL4Ml-H_isy5Y0SZEGn5Ok6qpC/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Xs9j_iVL4Ml-H_isy5Y0SZEGn5Ok6qpC/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">38</td>
+<td dir="ltr">38. Amphoreus' Saga of Heroes</td>
+<td dir="ltr">Amphoreus' Saga of Heroes</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1A2zyhZ_fr17ok8pINPPP0HDhrLRnTNJC/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1A2zyhZ_fr17ok8pINPPP0HDhrLRnTNJC/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">39</td>
+<td dir="ltr">39. A Long ‘Fated’ Meeting</td>
+<td dir="ltr">A Long ‘Fated’ Meeting</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/18bto8vykvdbqhwrHbmFWrgKWXhVTKgAp/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/18bto8vykvdbqhwrHbmFWrgKWXhVTKgAp/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">40</td>
+<td dir="ltr">40. Transcendent Ruan Tunes, Blushing Mei Blooms</td>
+<td dir="ltr">Transcendent Ruan Tunes, Blushing Mei Blooms</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1A4XDihu4rejt_M87TaN4wwuv4mOTa9Zm/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1A4XDihu4rejt_M87TaN4wwuv4mOTa9Zm/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">41</td>
+<td dir="ltr">41. Harmony Greets the New Year</td>
+<td dir="ltr">Harmony Greets the New Year</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1LShLxSg4gY7vbQEvr1clEeomAvzdCBl_/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1LShLxSg4gY7vbQEvr1clEeomAvzdCBl_/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">42</td>
+<td dir="ltr">42. Annals of Pinecany's Mappō Age</td>
+<td dir="ltr">Annals of Pinecany's Mappō Age</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/15niCNYCSvtwQS2JuWiNTp_p4JA7Zf7-q/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/15niCNYCSvtwQS2JuWiNTp_p4JA7Zf7-q/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">43</td>
+<td dir="ltr">43. Unlike a Floating Cloud</td>
+<td dir="ltr">Unlike a Floating Cloud</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/17z-Ltc2gmE3LIaKgifDU-wFhjmvYzjap/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/17z-Ltc2gmE3LIaKgifDU-wFhjmvYzjap/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">44</td>
+<td dir="ltr">44. Wanna Go Have Some Fun</td>
+<td dir="ltr">Wanna Go Have Some Fun</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1VBh9hnGf7SYuUf5ROD-HRqg_4BvJnhNZ/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1VBh9hnGf7SYuUf5ROD-HRqg_4BvJnhNZ/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">45</td>
+<td dir="ltr">45. Got a Date</td>
+<td dir="ltr">Got a Date</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1AJsG2i2Im2ojKDs5fJuB6zLkRnQe45n8/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1AJsG2i2Im2ojKDs5fJuB6zLkRnQe45n8/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">46</td>
+<td dir="ltr">46. Let’s Take a Photo</td>
+<td dir="ltr">Let’s Take a Photo</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1LbaAztVSVLFuB7ze_wzymUlk27NDr0GP/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1LbaAztVSVLFuB7ze_wzymUlk27NDr0GP/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">47</td>
+<td dir="ltr">47. Step onto the Board</td>
+<td dir="ltr">Step onto the Board</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/146s3X4EwfZf-08vcBqTNacMlCS7rs7PH/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/146s3X4EwfZf-08vcBqTNacMlCS7rs7PH/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">48</td>
+<td dir="ltr">48. Fables About the Stars Part 2</td>
+<td dir="ltr">Fables About the Stars Part 2</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1OuIZgS66Ol2PKzStPr6euEtoyC8zbry9/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1OuIZgS66Ol2PKzStPr6euEtoyC8zbry9/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">49</td>
+<td dir="ltr">49. The Worlds You’ve Never Been</td>
+<td dir="ltr">The Worlds You’ve Never Been</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/156vQQymhF6O5WCPj0tLhOosz4U5wxluq/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/156vQQymhF6O5WCPj0tLhOosz4U5wxluq/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">50</td>
+<td dir="ltr">50. A New Venture on the Eighth Dawn</td>
+<td dir="ltr">A New Venture on the Eighth Dawn</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1fhKrIOjqKLgZkdleP3NYutO7C_GATtIU/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1fhKrIOjqKLgZkdleP3NYutO7C_GATtIU/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">51</td>
+<td dir="ltr">51. A Night of Ever-Flame: Scene 33</td>
+<td dir="ltr">A Night of Ever-Flame: Scene 33</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1MoSQKlYWhdbCWuGWudI_B8yGm09b1Yfp/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1MoSQKlYWhdbCWuGWudI_B8yGm09b1Yfp/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">52</td>
+<td dir="ltr">52. A Collection of Desire</td>
+<td dir="ltr">A Collection of Desire</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1KBFGkb-vJfvNL0MgFIqyA-R4Ai0edvcP/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1KBFGkb-vJfvNL0MgFIqyA-R4Ai0edvcP/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">53</td>
+<td dir="ltr">53. T H E H E R T A ' S M A G I C K I T C H E N</td>
+<td dir="ltr">T H E H E R T A ' S M A G I C K I T C H E N</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/121hDUPXWFbW4PqHlUGBamDavMoY1VUcb/view?usp=sharing" target="_self">https://drive.google.com/file/d/121hDUPXWFbW4PqHlUGBamDavMoY1VUcb/view?usp=sharing</a></td>
+</tr>
+<tr>
+<td dir="auto">54</td>
+<td dir="ltr">54. Celestial Eyes Above Mortal Ruin</td>
+<td dir="ltr">Celestial Eyes Above Mortal Ruin</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/13vDIKOOUbasGg4EFHBkQl4OGOT1FY_f3/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/13vDIKOOUbasGg4EFHBkQl4OGOT1FY_f3/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">55</td>
+<td dir="ltr">55. The Arrow that Seeks the Stars</td>
+<td dir="ltr">The Arrow that Seeks the Stars</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1jMgeiW8R0BzhTXc5ZFoLUjGmfzfkghyw/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1jMgeiW8R0BzhTXc5ZFoLUjGmfzfkghyw/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">56</td>
+<td dir="ltr">56. Next Stop, the Stars!</td>
+<td dir="ltr">Next Stop, the Stars!</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1UBN2KS_lrnj6ADrC4STyVk3lzFLLUtiR/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1UBN2KS_lrnj6ADrC4STyVk3lzFLLUtiR/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">57</td>
+<td dir="ltr">57. Taking It Easy</td>
+<td dir="ltr">Taking It Easy</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/13_Ep8KMFnhCgc8Yb2JzZ57YJW2rN91VI/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/13_Ep8KMFnhCgc8Yb2JzZ57YJW2rN91VI/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">58</td>
+<td dir="ltr">58. For the Sun is Set to Die</td>
+<td dir="ltr">For the Sun is Set to Die</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1QGNMwEtMjh9FjgxMgAtLYrTemtPs1yhE/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1QGNMwEtMjh9FjgxMgAtLYrTemtPs1yhE/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">59</td>
+<td dir="ltr">59. Cosmic Ninjutsu Inscriptions — Havoc Exorcism: Lunar Vileslayer Scroll</td>
+<td dir="ltr">Cosmic Ninjutsu Inscriptions — Havoc Exorcism: Lunar Vileslayer Scroll</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1V_f-P4xcNQuwTZecwuLbu4-f-hmpoQHR/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1V_f-P4xcNQuwTZecwuLbu4-f-hmpoQHR/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">60</td>
+<td dir="ltr">60. Ichor of Two Dragons</td>
+<td dir="ltr">Ichor of Two Dragons</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1rfZigwxSeMKJFqhnydSAeKAxam3RayIX/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1rfZigwxSeMKJFqhnydSAeKAxam3RayIX/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">61</td>
+<td dir="ltr">61. Stars, Silent as Enigmas</td>
+<td dir="ltr">Stars, Silent as Enigmas</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1GtbW2P7m3pX8xL9Wg4n78LeYsOvD9bfW/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1GtbW2P7m3pX8xL9Wg4n78LeYsOvD9bfW/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">62</td>
+<td dir="ltr">62. Mind the Swelter, Watch the Furnace</td>
+<td dir="ltr">Mind the Swelter, Watch the Furnace</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1NVNKmy_n2vuxGsnKzIEE8YazLlgwAPN6/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1NVNKmy_n2vuxGsnKzIEE8YazLlgwAPN6/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">63</td>
+<td dir="ltr">63. Omniscia Spares None</td>
+<td dir="ltr">Omniscia Spares None</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1qAznl6_nR88H1NB6kbMIjIikE4JCUyCD/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1qAznl6_nR88H1NB6kbMIjIikE4JCUyCD/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">64</td>
+<td dir="ltr">64. The First Dawn of Destiny</td>
+<td dir="ltr">The First Dawn of Destiny</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1ROJ5q5_JrfZI8THDsqhg5UboW5Ro55q0/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1ROJ5q5_JrfZI8THDsqhg5UboW5Ro55q0/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">65</td>
+<td dir="ltr">65. The Sin of Pride</td>
+<td dir="ltr">The Sin of Pride</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1iLHOjUtDD5JIEyjUYrDj0ViTEHbu0n5d/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1iLHOjUtDD5JIEyjUYrDj0ViTEHbu0n5d/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">66</td>
+<td dir="ltr">66. Star Chaser</td>
+<td dir="ltr">Star Chaser</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1ly7qGOaOqlTFsfy7EB4TFkUbWxJwbG2s/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1ly7qGOaOqlTFsfy7EB4TFkUbWxJwbG2s/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">67</td>
+<td dir="ltr">67. Children Know Nothing</td>
+<td dir="ltr">Children Know Nothing</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1bBafX5nTMD-_T1J-vdaUQD3_p-HCHxwA/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1bBafX5nTMD-_T1J-vdaUQD3_p-HCHxwA/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">68</td>
+<td dir="ltr">68. Pneumanull Rice</td>
+<td dir="ltr">Pneumanull Rice</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1gtdLK4fYY0xH216872K6wCVOGloZmAiY/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1gtdLK4fYY0xH216872K6wCVOGloZmAiY/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">69</td>
+<td dir="ltr">69. Uneventful Night</td>
+<td dir="ltr">Uneventful Night</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Pt6E82f26R2mEa_Lm0zEr5WupsSFi-rN/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Pt6E82f26R2mEa_Lm0zEr5WupsSFi-rN/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">70</td>
+<td dir="ltr">70. Life Awakens from the Night</td>
+<td dir="ltr">Life Awakens from the Night</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/15HDl1vwVVXlVApeyqU0j8PGAS9Q6w7du/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/15HDl1vwVVXlVApeyqU0j8PGAS9Q6w7du/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">71</td>
+<td dir="ltr">71. Your Choice</td>
+<td dir="ltr">Your Choice</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1YrR3ZD1j1q6qttYsS1U6drzP02Ze9FBO/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1YrR3ZD1j1q6qttYsS1U6drzP02Ze9FBO/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">72</td>
+<td dir="ltr">72. Then Wake to Weep</td>
+<td dir="ltr">Then Wake to Weep</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1AfJNo8BxcVW4b7sjHaHLaAq2BHkRjU1x/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1AfJNo8BxcVW4b7sjHaHLaAq2BHkRjU1x/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">73</td>
+<td dir="ltr">73. Kyoden: A Cleave Across the Transient World</td>
+<td dir="ltr">Kyoden: A Cleave Across the Transient World</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/13kUR5SuOIt20dSinCSHRRYML7Vd0Kduq/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/13kUR5SuOIt20dSinCSHRRYML7Vd0Kduq/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">74</td>
+<td dir="ltr">74. The Final Note</td>
+<td dir="ltr">The Final Note</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1s0OMI2S_N-CKRThLljiss7uahe1pdvi7/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1s0OMI2S_N-CKRThLljiss7uahe1pdvi7/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">75</td>
+<td dir="ltr">75. Exotale: Scene 8</td>
+<td dir="ltr">Exotale: Scene 8</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1S30MyvG_dsnB8abfibJRqlmMOUb_ucbV/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1S30MyvG_dsnB8abfibJRqlmMOUb_ucbV/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">76</td>
+<td dir="ltr">76. Serendipity</td>
+<td dir="ltr">Serendipity</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1_ckW8LwxsDx5msXjD8t52IweUO2cQSeT/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1_ckW8LwxsDx5msXjD8t52IweUO2cQSeT/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">77</td>
+<td dir="ltr">77. A Story That Never Grows Dull</td>
+<td dir="ltr">A Story That Never Grows Dull</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1GoAdK8kHrJDWh00AUpweCJD7BKIuXEEz/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1GoAdK8kHrJDWh00AUpweCJD7BKIuXEEz/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">78</td>
+<td dir="ltr">78. If We Had Wings</td>
+<td dir="ltr">If We Had Wings</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1nRgz34JJ-QvzyNRArk4F8_OWtBAs8ckb/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1nRgz34JJ-QvzyNRArk4F8_OWtBAs8ckb/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">79</td>
+<td dir="ltr">79. Fables About the Stars Part 1</td>
+<td dir="ltr">Fables About the Stars Part 1</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/12nMBtLUeo5Ooh0SgPVCbJd6jdZWsVu82/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/12nMBtLUeo5Ooh0SgPVCbJd6jdZWsVu82/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">80</td>
+<td dir="ltr">80. Into the Yawning Chasm</td>
+<td dir="ltr">Into the Yawning Chasm</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/143yV3gCu6KDCD8HpedfD9Urs_cRt3046/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/143yV3gCu6KDCD8HpedfD9Urs_cRt3046/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">81</td>
+<td dir="ltr">81. Stoneheart's Oath Ring: Both Ends of the Scale</td>
+<td dir="ltr">Stoneheart's Oath Ring: Both Ends of the Scale</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1bX-peEAc1D3J4UC3rdJE3kt-BtflsArj/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1bX-peEAc1D3J4UC3rdJE3kt-BtflsArj/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">82</td>
+<td dir="ltr">82. Even Immortality Ends</td>
+<td dir="ltr">Even Immortality Ends</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1CyvXadhS8hFofa_MLGbp2Ww3GvHtt8wC/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1CyvXadhS8hFofa_MLGbp2Ww3GvHtt8wC/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">83</td>
+<td dir="ltr">83. Flying Aureus Shot to Lupine Rue</td>
+<td dir="ltr">Flying Aureus Shot to Lupine Rue</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1CUTw8dRg83KKbH5E43tLQrtF9F86SIgL/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1CUTw8dRg83KKbH5E43tLQrtF9F86SIgL/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">84</td>
+<td dir="ltr">84. On Swords</td>
+<td dir="ltr">On Swords</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1HbzEUQ0gsYKA5zF-PsRlgYPUtWTU3jQk/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1HbzEUQ0gsYKA5zF-PsRlgYPUtWTU3jQk/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">85</td>
+<td dir="ltr">85. Finest Duel Under the Pristine Blue</td>
+<td dir="ltr">Finest Duel Under the Pristine Blue</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Nl4mvk-1XHRvyp35VpR9q2Jbw6QUAtdK/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Nl4mvk-1XHRvyp35VpR9q2Jbw6QUAtdK/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">86</td>
+<td dir="ltr">86. Challenges Come Anywhere, Anytime</td>
+<td dir="ltr">Challenges Come Anywhere, Anytime</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1Ha_IeS4Dy7QknMoQJ8jYmTgWnEBwUBih/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1Ha_IeS4Dy7QknMoQJ8jYmTgWnEBwUBih/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">87</td>
+<td dir="ltr">87. After the Sunset</td>
+<td dir="ltr">After the Sunset</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1bz5XEDV8fZZnWrPDbAhyHgVb7konEYWB/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1bz5XEDV8fZZnWrPDbAhyHgVb7konEYWB/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">88</td>
+<td dir="ltr">88. Galactic Roaming</td>
+<td dir="ltr">Galactic Roaming</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1DU6XlCsIc0i_mgAiMGZO54MPEXkeSolA/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1DU6XlCsIc0i_mgAiMGZO54MPEXkeSolA/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">89</td>
+<td dir="ltr">89. Farewell, Cyrene</td>
+<td dir="ltr">Farewell, Cyrene</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/18YBgKzTe_x7juamQiiRFp5fTLx2zI1P8/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/18YBgKzTe_x7juamQiiRFp5fTLx2zI1P8/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">90</td>
+<td dir="ltr">90. Trek</td>
+<td dir="ltr">Trek</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1v39xCfQHwVW1cX1FOjMLLcETg6KU1BvA/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1v39xCfQHwVW1cX1FOjMLLcETg6KU1BvA/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">91</td>
+<td dir="ltr">91. Grasp the Stars</td>
+<td dir="ltr">Grasp the Stars</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1OB_g0Q7Rk0yzqUwwIiVXhx-FmeSHK_rp/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1OB_g0Q7Rk0yzqUwwIiVXhx-FmeSHK_rp/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">92</td>
+<td dir="ltr">92. General of All Affairs at the Seat of Divine Foresight</td>
+<td dir="ltr">General of All Affairs at the Seat of Divine Foresight</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1GpkPfsUXtT1OR_12_LGk8hq-kRBZQhx6/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1GpkPfsUXtT1OR_12_LGk8hq-kRBZQhx6/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">93</td>
+<td dir="ltr">93. Jolted Awake From a Winter Dream</td>
+<td dir="ltr">Jolted Awake From a Winter Dream</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1owYaSzFiw3VKNSiFaNco-Z0AsKR37eA8/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1owYaSzFiw3VKNSiFaNco-Z0AsKR37eA8/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">94</td>
+<td dir="ltr">94. Night Falls, Everyone, Close Your Eyes</td>
+<td dir="ltr">Night Falls, Everyone, Close Your Eyes</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1ihYKBQ8KXSP0ucbcvAF-jBb-F3PmBcwh/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1ihYKBQ8KXSP0ucbcvAF-jBb-F3PmBcwh/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">95</td>
+<td dir="ltr">95. The Embers of Glamoth</td>
+<td dir="ltr">The Embers of Glamoth</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/142c6gYL4kngbiI4E8WLdDy9ggAmZg_FP/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/142c6gYL4kngbiI4E8WLdDy9ggAmZg_FP/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">96</td>
+<td dir="ltr">96. Presently, Beneath a Shared Sky of Stars</td>
+<td dir="ltr">Presently, Beneath a Shared Sky of Stars</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1jfvtQMsXJIwoenxXMTfyiaKd9sEGPyxQ/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1jfvtQMsXJIwoenxXMTfyiaKd9sEGPyxQ/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">97</td>
+<td dir="ltr">97. To You Who Will Soon Depart</td>
+<td dir="ltr">To You Who Will Soon Depart</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1zEqwLbhv0A9HpdnIzjc1PLQ6ltMVO_AC/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1zEqwLbhv0A9HpdnIzjc1PLQ6ltMVO_AC/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">98</td>
+<td dir="ltr">98. Memories are the Prelude to Dreams</td>
+<td dir="ltr">Memories are the Prelude to Dreams</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1rDbJq1AAnKYcBSYelh6U2X0E_jycCoRP/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1rDbJq1AAnKYcBSYelh6U2X0E_jycCoRP/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">99</td>
+<td dir="ltr">99. Supreme Idiocy</td>
+<td dir="ltr">Supreme Idiocy</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1o3iJPOvH__REN1MWJajuZRbmZ5zsHJDV/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1o3iJPOvH__REN1MWJajuZRbmZ5zsHJDV/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">100</td>
+<td dir="ltr">100. As Tomorrow Became Yesterday</td>
+<td dir="ltr">. As Tomorrow Became Yesterday</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/14fbf8mnVFERbj1O6CeMg_9wQnxL-QUdr/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/14fbf8mnVFERbj1O6CeMg_9wQnxL-QUdr/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">101</td>
+<td dir="ltr">101. Farewell, Penacony</td>
+<td dir="ltr">. Farewell, Penacony</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1YmZLjGVECrmVlveJjucJIvcBhnm_XfwA/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1YmZLjGVECrmVlveJjucJIvcBhnm_XfwA/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">102</td>
+<td dir="ltr">102. Trailblazer</td>
+<td dir="ltr">. Trailblazer</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1vQ_ZS_mdonafIWLGA4vk1dF59k_9Ip_V/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1vQ_ZS_mdonafIWLGA4vk1dF59k_9Ip_V/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">103</td>
+<td dir="ltr">103. Light Slips the Gate, Shadow Greets the Throne</td>
+<td dir="ltr">. Light Slips the Gate, Shadow Greets the Throne</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1F0gQJRSGu0C8rMdeKL0FANxdF6kP1uj1/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1F0gQJRSGu0C8rMdeKL0FANxdF6kP1uj1/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">104</td>
+<td dir="ltr">104. Burning Scent of Home</td>
+<td dir="ltr">. Burning Scent of Home</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1PaHzdqAcXvwMNkp5ds_biBw-aVWqSTai/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1PaHzdqAcXvwMNkp5ds_biBw-aVWqSTai/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">105</td>
+<td dir="ltr">105. Cowboy's Got Business</td>
+<td dir="ltr">. Cowboy's Got Business</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1GMAoIY0QVlj8Sk2EfJQQD_p8UpZs7eGp/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1GMAoIY0QVlj8Sk2EfJQQD_p8UpZs7eGp/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">106</td>
+<td dir="ltr">106. In the Name of Landau</td>
+<td dir="ltr">. In the Name of Landau</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1OTtqjGlra4JZkPMaN2-be9g7QBz8Lss2/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1OTtqjGlra4JZkPMaN2-be9g7QBz8Lss2/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">107</td>
+<td dir="ltr">107. Through the Petals in the Land of Repose</td>
+<td dir="ltr">. Through the Petals in the Land of Repose</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1H1UkhZ3UJgw3ygGb6P_IvuaAfK9rtL80/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1H1UkhZ3UJgw3ygGb6P_IvuaAfK9rtL80/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">108</td>
+<td dir="ltr">108. Piece of Cake</td>
+<td dir="ltr">. Piece of Cake</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1uDL9N20gO7ZaAzdx0RS-B55EmhdzKfd_/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1uDL9N20gO7ZaAzdx0RS-B55EmhdzKfd_/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">109</td>
+<td dir="ltr">109. Back to Earth in Evernight</td>
+<td dir="ltr">. Back to Earth in Evernight</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1xmc7RRfdmMrJQcOV2NLQdzIRxN2Q1QHE/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1xmc7RRfdmMrJQcOV2NLQdzIRxN2Q1QHE/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">110</td>
+<td dir="ltr">110. The Long Night of Serenity</td>
+<td dir="ltr">. The Long Night of Serenity</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1AG6igFAXyaQh7EVgSzrICPLWfrkBxoNB/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1AG6igFAXyaQh7EVgSzrICPLWfrkBxoNB/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">111</td>
+<td dir="ltr">111. Your Colour</td>
+<td dir="ltr">. Your Colour</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1YrR3ZD1j1q6qttYsS1U6drzP02Ze9FBO/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1YrR3ZD1j1q6qttYsS1U6drzP02Ze9FBO/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">112</td>
+<td dir="ltr">112. The Cusp of Ignition</td>
+<td dir="ltr">. The Cusp of Ignition</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1D-53IMtTCejr4-T_a24arXHP7-kCiEep/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1D-53IMtTCejr4-T_a24arXHP7-kCiEep/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">113</td>
+<td dir="ltr">113. Home</td>
+<td dir="ltr">. Home</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1-K_NFNchhRqluMir5lVtmJKbRZ3IFxxr/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1-K_NFNchhRqluMir5lVtmJKbRZ3IFxxr/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">114</td>
+<td dir="ltr">114. Death Approaches</td>
+<td dir="ltr">. Death Approaches</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1h-ABV8fhL_EM6zI-queafzWxflxJYaxd/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1h-ABV8fhL_EM6zI-queafzWxflxJYaxd/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">115</td>
+<td dir="ltr">115. Epitaph</td>
+<td dir="ltr">. Epitaph</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/12HB_1OWXpBoyJECdDqnXqrF2DvWJ2i1y/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/12HB_1OWXpBoyJECdDqnXqrF2DvWJ2i1y/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">116</td>
+<td dir="ltr">116. Expert Tutorial</td>
+<td dir="ltr">. Expert Tutorial</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1N9QQWvnfV4CCaP2EtHLDcrCqZUqpNd9_/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1N9QQWvnfV4CCaP2EtHLDcrCqZUqpNd9_/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">117</td>
+<td dir="ltr">117. Selection, Planning, and Opportunity</td>
+<td dir="ltr">. Selection, Planning, and Opportunity</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1t3OmypFwP1V5OPJlvpbTtpThry_UwNDO/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1t3OmypFwP1V5OPJlvpbTtpThry_UwNDO/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">118</td>
+<td dir="ltr">118. The Prodigal’s Return</td>
+<td dir="ltr">. The Prodigal’s Return</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1lv1cuxohlO402lqppRO7I0PhSpi-IfYx/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1lv1cuxohlO402lqppRO7I0PhSpi-IfYx/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">119</td>
+<td dir="ltr">119. Exodus of Five Dragons</td>
+<td dir="ltr">. Exodus of Five Dragons</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1R3Td24-S8cwFaG8OuyjXPaB7Tffvn7LX/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1R3Td24-S8cwFaG8OuyjXPaB7Tffvn7LX/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">120</td>
+<td dir="ltr">120. Embers in a Shell</td>
+<td dir="ltr">. Embers in a Shell</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/1NyPVbS8ileMwFPIK-59Wo_LMYJC-NIdQ/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/1NyPVbS8ileMwFPIK-59Wo_LMYJC-NIdQ/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td dir="auto">121</td>
+<td dir="ltr">121. Wrath of Man</td>
+<td dir="ltr">. Wrath of Man</td>
+<td dir="ltr"><a rel="noopener nofollow" class="external-link is-unresolved" href="https://drive.google.com/file/d/16G-I_eKJbPL41fHVR20KAFAYAELj8HAR/view?usp=drivesdk" target="_self">https://drive.google.com/file/d/16G-I_eKJbPL41fHVR20KAFAYAELj8HAR/view?usp=drivesdk</a></td>
+</tr>
+</tbody>
+</table></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="hsr-music-ranking.html#HSR_Music_Ranking_0" data-path="#HSR_Music_Ranking_0"><div class="tree-item-inner heading-link" heading-name="HSR Music Ranking">HSR Music Ranking</div></a><div class="tree-item-children"></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>
